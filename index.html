@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+    <style>
+        /* پوری باڈی پر امیج */
+        body {
+            background: url('https://img.freepik.com/free-vector/spaceship-interstellar-station-alien-planet_33099-1881.jpg?t=st=1738321288~exp=1738324888~hmac=adde768465d10af1ffe92b4ae038cb2aea6c2e2e3f78c5879ac3655a3ee80d63&w=996') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+        /* گلاس مورفزم (blur effect) */
+        .container {
+            background: rgba(255, 255, 255, 0.1); /* Transparent white */
+            backdrop-filter: blur(15px); /* Blurred effect */
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            width: 600px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #FCDC00;
+        }
+
+        input {
+            padding: 12px;
+            width: 50%;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 15px;
+            outline: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        input::placeholder{
+            color: #1CCBF8;
+        }
+
+        /* بٹنز کی اسٹائلنگ */
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            margin: 5px;
+            width: 48%;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* بٹنز کے مختلف رنگ */
+        button:nth-child(1) { background: #ff4b5c; } /* Red */
+        button:nth-child(2) { background: #1cb5e0; } /* Blue */
+        button:nth-child(3) { background: #28c76f; } /* Green */
+        button:nth-child(4) { background: #f4a261; } /* Orange */
+
+        button:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="text">Your Result</h1>
+        <input type="text" id="task" placeholder="Enter Value">
+        <br>
+        <button  onclick="Push()">Push</button>
+        <button onclick="Pop()">Pop</button>
+        <button onclick="Unshift()">UnShift</button>
+        <button onclick="Shift()">Shift</button>
+        <button onclick="Sort()">Sort</button>
+        <button onclick="Reverse()">Reverse</button>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
